@@ -1,0 +1,18 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/requeriments.txt b/requeriments.txt
+index 43d590a263f17155d67210b1c71e359455bd17c0..f9a54b8b1ce4ca0d449ad78cc81c6c898b642fcf 100644
+--- a/requeriments.txt
++++ b/requeriments.txt
+@@ -1,6 +1,9 @@
+ streamlit
+ pandas
+ numpy
+ openpyxl
+ xlsxwriter
++opencv-python
++mediapipe
++sounddevice
+ 
+ 
+EOF
+)
